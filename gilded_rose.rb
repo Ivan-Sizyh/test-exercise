@@ -1,3 +1,5 @@
+require_relative 'gilded_rose'
+
 class GildedRose
   def initialize(items)
     @items = items
@@ -90,30 +92,3 @@ class GildedRose
     end
   end
 end
-
-class Item
-  attr_accessor :name, :sell_in, :quality, :days_expired
-
-  def initialize(name, sell_in, quality)
-    @name = name
-    @sell_in = sell_in < 0 ? 0 : sell_in
-    @quality = quality
-    @days_expired = [0, -sell_in].max
-  end
-
-  def to_s
-    "#{@name}, #{@sell_in}, #{@quality}, #{@days_expired} дней просрочено"
-  end
-end
-
-# items = [
-#   Item.new("Aged Brie", 10, 20),
-#   Item.new("Backstage passes to a TAFKAL80ETC concert", 15, 20),
-#   Item.new("Sulfuras, Hand of Ragnaros", 0, 80),
-#   Item.new("Conjured", 5, 10),
-#   Item.new("Normal Item", 3, 7)
-# ]
-
-# gilded_rose = GildedRose.new(items)
-
-# gilded_rose.run_continuously
