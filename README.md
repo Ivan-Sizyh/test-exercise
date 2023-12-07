@@ -29,3 +29,7 @@ All work is fine.
 Just use ruby texttest_fixture.rb
 
 I use ruby-3.1.4
+
+## For run programm
+
+Use ruby main.rb
