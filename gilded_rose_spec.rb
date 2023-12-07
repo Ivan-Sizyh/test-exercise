@@ -1,8 +1,7 @@
 require File.join(File.dirname(__FILE__), 'gilded_rose')
+require File.join(File.dirname(__FILE__), 'item')
 
 describe GildedRose do
-  require File.join(File.dirname(__FILE__), 'gilded_rose')
-
   describe "#update_quality" do
     it "does not change the name" do
       items = [Item.new("foo", 0, 0)]
