@@ -2,7 +2,7 @@ require_relative 'gilded_rose'
 require_relative 'item'
 
 items = [
-  Item.new("Aged Brie", 10, 20),
+  Item.new("Aged Brie", 10, -20),
   Item.new("Backstage passes to a TAFKAL80ETC concert", 15, 20),
   Item.new("Sulfuras, Hand of Ragnaros", 0, 80),
   Item.new("Conjured", 5, 10),
